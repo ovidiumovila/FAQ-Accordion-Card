@@ -1,0 +1,63 @@
+<div class="faq">
+    <div class="left">
+        <img class="box" src="../assets/images/illustration-box-desktop.svg">
+    </div>
+    <div class="right">
+        <section class="middle">
+            <img class="woman" src="../assets/images/illustration-woman-online-desktop.svg" alt="illustration-women">
+        </section>
+
+        <section class="right2">
+            <div class="faqtitle">
+                <h1>FAQ</h1>
+            </div>
+
+            <div class="question-answer__accordion">
+                <button mat-button [matMenuTriggerFor]="menu">How many team members can I invite?</button>
+                <img src="assets/images/icon-arrow-down.svg">
+                <mat-menu #menu="matMenu" backdropClass="customize">
+                    <button class="answer-button" mat-menu-item>You can invite up to 2 additional users on the Free plan.<br> There is no limit on
+                        team members for the Premium plan.</button>
+                </mat-menu>
+            </div>
+            <hr>
+            <div class="question-answer__accordion">
+                <button mat-button [matMenuTriggerFor]="menu2">What is the maximum file upload size?</button>
+                <img src="assets/images/icon-arrow-down.svg">
+                <mat-menu #menu2="matMenu" backdropClass="customize">
+                    <button class="answer-button" mat-menu-item>No more than 2GB.<br> All files in your account must fit your allotted storage
+                        space.</button>
+                </mat-menu>
+            </div>
+            <hr>
+            <div class="question-answer__accordion">
+                <button mat-button [matMenuTriggerFor]="menu3">How do I reset my password?</button>
+                <img src="assets/images/icon-arrow-down.svg">
+                <mat-menu #menu3="matMenu" backdropClass="customize"> 
+                    <button class="answer-button" mat-menu-item>Click “Forgot password” from the login page or “Change password” from your
+                        profile page.
+                        A reset link will be emailed to you.</button>
+                </mat-menu>
+            </div>
+            <hr>
+            <div class="question-answer__accordion">
+                <button mat-button [matMenuTriggerFor]="menu4">Can I cancel my subscription?</button>
+                <img src="assets/images/icon-arrow-down.svg">
+                <mat-menu #menu4="matMenu" backdropClass="customize">
+                    <button class="answer-button" mat-menu-item>Yes! Send us a message and we’ll process your request no questions
+                        asked.</button>
+                </mat-menu>
+            </div>
+            <hr>
+            <div class="question-answer__accordion">
+                <button mat-button [matMenuTriggerFor]="menu5">Do you provide additional support?</button>
+                <img src="assets/images/icon-arrow-down.svg">
+                <mat-menu #menu5="matMenu" backdropClass="customize">
+                    <button class="answer-button" mat-menu-item> Chat and email support is available 24/7.<br>Phone lines are open during normal
+                        business hours.</button>
+                </mat-menu>
+            </div>
+            <hr>
+        </section>
+    </div>
+</div>

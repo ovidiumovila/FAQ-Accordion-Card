@@ -1,0 +1,81 @@
+.faq {
+    background-position: 50px;
+    background-color: white;
+    width: 1250px;
+    height: 520px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px black;
+
+    .right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-image: url(../../../assets/images/bg-pattern-desktop.svg);
+
+        .right2 {
+            padding: 150px;
+            margin-bottom: 60px;
+
+            .faqtitle {
+                font-size: 25px;
+            }
+
+            .question-answer__accordion {
+                button {
+                    border: none;
+                    background: none;
+                    /* width: 391px; */
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .middle {
+            margin-left: -97px;
+            overflow: hidden;
+        }
+
+        .woman {
+            // height: 300px;
+            // width: 400px;
+            margin-left: -74px;
+        }
+    }
+
+    .left {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -127px;
+        /* background-color: transparent; */
+        overflow: overlay;
+
+        .box {
+            // height: 125px;
+            // width: 125px;
+            margin-top: 65px;
+            margin-left: 33px;
+        }
+    }
+}
+
+::ng-deep {
+    .customize + * .mat-menu-panel {
+        max-width: 500px;
+        padding: 0px;
+
+        .answer-button {
+            color: gray;
+            padding: 2px 5px;
+            font-size: 18px;
+            min-width: 500px;
+            height: 40px;
+            white-space: normal;
+            line-height: 20px;
+        }
+    }
+}
